@@ -1,5 +1,4 @@
-# Yourownsite.rf.gd
-
+# YourOwnSite! 
 Welcome to **yourownsite.rf.gd** – a platform for creating personalized static websites! 🚀
 
 ## About
