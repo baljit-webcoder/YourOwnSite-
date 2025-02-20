@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Own Site - Personalized websites at affordable prices. Get your custom website today!">
+    <meta name="keywords" content="personalized websites, custom web design, website hosting, affordable web design">
+    <meta name="author" content="Baljit Panda">
+    <meta name="robots" content="index, follow">
+    <title>YourOwnSite!</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        /* Dark Mode Styling */
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: linear-gradient(90deg, #007BFF, #00D4FF);
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Menu (Hidden by Default) */
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #007BFF;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: 0.4s;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 10px;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            /* Dark mode fix for mobile menu */
+            .dark-mode .nav-links {
+                background: #222;
+            }
+        }
+
+        /* Header */
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Content Box */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.4s;
+        }
+
+        .dark-mode .content {
+            background: #1e1e1e;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .toggle-label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #007BFF;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            font-size: 14px;
+        }
+        pre {
+    white-space: pre-wrap; /* Allows text to wrap inside <pre> */
+    word-wrap: break-word; /* Ensures long words do not overflow */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><strong>YourOwnSite!</strong></div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="disclaimers-credits.html">Disclaimers & Credits</a>
+            <a href="sample.html">Sample Page</a>
+        </div>
+    </nav>
+
+    <header>Welcome to YourOwnSite!</header>
+
+    <div class="content">
+        <p>
+            Here you can make customized websites at affordable rates for your special occasions!
+        </p>
+        <p>
+            ""Get Your Personalized Website Today!""
+        </p>
+        <p>
+            Managed and hosted by <strong>Baljit Panda</strong>, Class VII-A of PM SHRI Kendriya Vidyalaya No. 5 Bhubaneswar.
+        </p>
+    </div>
+
+    <!-- Theme Toggle Switch -->
+    <div class="theme-toggle">
+        <span class="toggle-label">Dark Mode</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <footer>&copy; 2025 YourOwnSite | All Rights Reserved</footer>
+
+    <script>
+        // Check Local Storage on Page Load
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+            document.getElementById("theme-toggle").checked = true;
+        }
+    
+        // Toggle Dark Mode & Save to Local Storage
+        document.getElementById("theme-toggle").addEventListener("change", function () {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("dark-mode", "enabled");
+            } else {
+                localStorage.setItem("dark-mode", "disabled");
+            }
+        });
+    
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+    
+    
+</body>
+</html>
