@@ -25,4 +25,5 @@ This project is open-source. Check the repository for licensing details.
 
 ---
 🌐 Start your personalized web journey with **yourownsite.rf.gd**!
-
+(Note: Our domain name is **"https://yourownsite.rf.gd"**
+ 
